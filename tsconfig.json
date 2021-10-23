@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "target": "es2015",
+        "inlineSourceMap": true,
+        "baseUrl": "./",
+        "skipLibCheck": true,
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "plugins": [
+            {
+                "name": "typescript-eslint-language-service"
+            }
+        ]
+    },
+    "include": [
+        "src/setup.js",
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.json",
+        "tests/**/*.ts",
+        "tests/**/*.tsx"
+    ],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
